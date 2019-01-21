@@ -1,0 +1,139 @@
+{
+  "name": "ELECTRONPROJECT",
+  "version": "0.0.0",
+  "main": "main.js",
+  "description": "ELECTRONPROJECT DESC",
+  "author": {
+    "name": "Greif Matthias",
+    "email": "greif.matthias@gmail.com"
+  },
+  "scripts": {
+    "ng": "ng",
+    "debug" : "electron .",
+    "electron": "ng build --base-href ./ && electron .",
+    "electron-build": "ng build --prod && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "ng build --prod && electron-builder"
+  },
+  "build": {
+    "directories": {
+      "output": "out"
+    },
+    "appId": "be.greifmatthias.electron",
+    "asar": true,
+    "files": [
+      "**/*",
+      "dist/**/*"
+    ],
+    "copyright": "©2018 Greif Matthias",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "linux": {
+      "category": "Util;GNOME;GTK",
+      "packageCategory": "GNOME;GTK",
+      "description": "RSS feed for all your favorite images",
+      "target": [
+        "deb",
+        "zip",
+        "AppImage",
+        "snap"
+      ],
+      "maintainer": "Greif Matthias <greif.matthias@gmail.com>",
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "deb": {
+      "synopsis": "ImageFeed App"
+    },
+    "snap": {
+      "synopsis": "ImageFeed App"
+    },
+    "dmg": {
+      "background": "build/appdmg.png",
+      "icon": "build/icon.icns",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 380,
+          "y": 280,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 110,
+          "y": 280,
+          "type": "file"
+        }
+      ],
+      "window": {
+        "width": 500,
+        "height": 500
+      }
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis-web",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "publisherName": "Greif Matthias"
+    },
+    "nsis": {
+      "perMachine": true,
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [
+    "RSS",
+    "Feed",
+    "electron-app",
+    "electron",
+    "Desktop app",
+    "Photos"
+  ],
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~7.2.0",
+    "@angular/common": "~7.2.0",
+    "@angular/compiler": "~7.2.0",
+    "@angular/core": "~7.2.0",
+    "@angular/forms": "~7.2.0",
+    "@angular/platform-browser": "~7.2.0",
+    "@angular/platform-browser-dynamic": "~7.2.0",
+    "@angular/router": "~7.2.0",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.3.3",
+    "tslib": "^1.9.0",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.12.0",
+    "@angular/cli": "~7.2.2",
+    "@angular/compiler-cli": "~7.2.0",
+    "@angular/language-service": "~7.2.0",
+    "@types/electron": "^1.6.10",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.5.0",
+    "electron": "^4.0.1",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.1.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0",
+    "typescript": "~3.2.2"
+  }
+}
