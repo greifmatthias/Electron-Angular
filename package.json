@@ -1,15 +1,15 @@
 {
-  "name": "ELECTRONPROJECT",
+  "name": "Electron Project",
   "version": "0.0.0",
   "main": "main.js",
-  "description": "ELECTRONPROJECT DESC",
+  "description": "Description of electron project",
   "author": {
-    "name": "Greif Matthias",
-    "email": "greif.matthias@gmail.com"
+    "name": "Your name",
+    "email": "Your email"
   },
   "scripts": {
     "ng": "ng",
-    "debug" : "electron .",
+    "debug": "electron .",
     "electron": "ng build --base-href ./ && electron .",
     "electron-build": "ng build --prod && electron .",
     "pack": "electron-builder --dir",
@@ -19,13 +19,13 @@
     "directories": {
       "output": "out"
     },
-    "appId": "be.greifmatthias.electron",
+    "appId": "com.domain.app",
     "asar": true,
     "files": [
       "**/*",
       "dist/**/*"
     ],
-    "copyright": "©2018 Greif Matthias",
+    "copyright": "©2018 Copyright",
     "mac": {
       "category": "public.app-category.productivity",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
@@ -33,21 +33,21 @@
     "linux": {
       "category": "Util;GNOME;GTK",
       "packageCategory": "GNOME;GTK",
-      "description": "RSS feed for all your favorite images",
+      "description": "Some description for your application",
       "target": [
         "deb",
         "zip",
         "AppImage",
         "snap"
       ],
-      "maintainer": "Greif Matthias <greif.matthias@gmail.com>",
+      "maintainer": "Your name <Your email>",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
     },
     "deb": {
-      "synopsis": "ImageFeed App"
+      "synopsis": "Application name"
     },
     "snap": {
-      "synopsis": "ImageFeed App"
+      "synopsis": "Application name"
     },
     "dmg": {
       "background": "build/appdmg.png",
@@ -82,7 +82,7 @@
         }
       ],
       "icon": "build/icon.ico",
-      "publisherName": "Greif Matthias"
+      "publisherName": "Name of publisher"
     },
     "nsis": {
       "perMachine": true,
@@ -91,12 +91,11 @@
     }
   },
   "keywords": [
-    "RSS",
-    "Feed",
-    "electron-app",
+    "Some",
+    "Key",
+    "Words",
     "electron",
-    "Desktop app",
-    "Photos"
+    "electron-app"
   ],
   "private": true,
   "dependencies": {
@@ -121,7 +120,7 @@
     "@types/electron": "^1.6.10",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
+    "@types/node": "~10.12.18",
     "codelyzer": "~4.5.0",
     "electron": "^4.0.1",
     "jasmine-core": "~2.99.1",
@@ -133,7 +132,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
+    "tslint": "~5.12.1",
     "typescript": "~3.2.2"
   }
 }
