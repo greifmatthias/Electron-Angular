@@ -1,11 +1,11 @@
 {
-  "name": "Electron Project",
+  "name": "{{ApplicationName}}",
   "version": "0.0.0",
   "main": "main.js",
-  "description": "Description of electron project",
+  "description": "{{ApplicationDescription}}",
   "author": {
-    "name": "Your name",
-    "email": "Your email"
+    "name": "{{AuthorName}}",
+    "email": "{{AuthorEmail}}"
   },
   "scripts": {
     "ng": "ng",
@@ -19,35 +19,35 @@
     "directories": {
       "output": "out"
     },
-    "appId": "com.domain.app",
+    "appId": "{{ApplicationDomain: com.sample.app}}",
     "asar": true,
     "files": [
       "**/*",
       "dist/**/*"
     ],
-    "copyright": "©2018 Copyright",
+    "copyright": "{{©2018 Copyright}}",
     "mac": {
-      "category": "public.app-category.productivity",
+      "category": "{{macApplicationCategory}}",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
     },
     "linux": {
       "category": "Util;GNOME;GTK",
       "packageCategory": "GNOME;GTK",
-      "description": "Some description for your application",
+      "description": "{{ApplicationDescription}}",
       "target": [
         "deb",
         "zip",
         "AppImage",
         "snap"
       ],
-      "maintainer": "Your name <Your email>",
+      "maintainer": "{{AuthorName}} <{{AuthorEmail}}}>",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
     },
     "deb": {
-      "synopsis": "Application name"
+      "synopsis": "{{ApplicationName}}"
     },
     "snap": {
-      "synopsis": "Application name"
+      "synopsis": "{{ApplicationName}}"
     },
     "dmg": {
       "background": "build/appdmg.png",
@@ -82,7 +82,7 @@
         }
       ],
       "icon": "build/icon.ico",
-      "publisherName": "Name of publisher"
+      "publisherName": "{{AuthorName}}"
     },
     "nsis": {
       "perMachine": true,
@@ -91,9 +91,9 @@
     }
   },
   "keywords": [
-    "Some",
-    "Key",
-    "Words",
+    "{{Some}}",
+    "{{Key}}",
+    "{{Words}}",
     "electron",
     "electron-app"
   ],
