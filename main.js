@@ -7,12 +7,9 @@ function createWindow () {
   this._window = new BrowserWindow({
     width: 1200, 
     height: 800,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#FFFFFF',
     icon: `file://${__dirname}/dist/assets/logo.png`
   });
-
-  // Remove menu
-  this._window.setMenu(null);
   
   // Load url
   this._window.loadURL(`file://${__dirname}/dist/project/index.html`);
