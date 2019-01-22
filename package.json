@@ -25,7 +25,7 @@
       "**/*",
       "dist/**/*"
     ],
-    "copyright": "{{©2018 Copyright}}",
+    "copyright": "{{Copyright}}",
     "mac": {
       "category": "{{macApplicationCategory}}",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
@@ -40,7 +40,7 @@
         "AppImage",
         "snap"
       ],
-      "maintainer": "{{AuthorName}} <{{AuthorEmail}}}>",
+      "maintainer": "{{AuthorName}} <{{AuthorEmail}}>",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
     },
     "deb": {
@@ -91,9 +91,7 @@
     }
   },
   "keywords": [
-    "{{Some}}",
-    "{{Key}}",
-    "{{Words}}",
+    "{{SomeKeyWords}}",
     "electron",
     "electron-app"
   ],
