@@ -1,11 +1,11 @@
 {
-  "name": "{{ApplicationName}}",
+  "name": "ARandomApplication",
   "version": "0.0.0",
   "main": "main.js",
-  "description": "{{ApplicationDescription}}",
+  "description": "Just a random application to debug the Angular-Electron framework",
   "author": {
-    "name": "{{AuthorName}}",
-    "email": "{{AuthorEmail}}"
+    "name": "Greif Matthias",
+    "email": "greif.matthias@outlook.com"
   },
   "scripts": {
     "ng": "ng",
@@ -19,35 +19,35 @@
     "directories": {
       "output": "out"
     },
-    "appId": "{{ApplicationDomain: com.sample.app}}",
+    "appId": "be.greifmatthias.electronangular",
     "asar": true,
     "files": [
       "**/*",
       "dist/**/*"
     ],
-    "copyright": "{{Copyright}}",
+    "copyright": "Greif Matthias 2019",
     "mac": {
-      "category": "{{macApplicationCategory}}",
+      "category": "Development",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
     },
     "linux": {
       "category": "Util;GNOME;GTK",
       "packageCategory": "GNOME;GTK",
-      "description": "{{ApplicationDescription}}",
+      "description": "Just a random application to debug the Angular-Electron framework",
       "target": [
         "deb",
         "zip",
         "AppImage",
         "snap"
       ],
-      "maintainer": "{{AuthorName}} <{{AuthorEmail}}>",
+      "maintainer": "Greif Matthias <greif.matthias@gmail.com>",
       "artifactName": "${productName}-${version}-${arch}.${ext}"
     },
     "deb": {
-      "synopsis": "{{ApplicationName}}"
+      "synopsis": "A Random Application"
     },
     "snap": {
-      "synopsis": "{{ApplicationName}}"
+      "synopsis": "A Random Application"
     },
     "dmg": {
       "background": "build/appdmg.png",
@@ -82,7 +82,7 @@
         }
       ],
       "icon": "build/icon.ico",
-      "publisherName": "{{AuthorName}}"
+      "publisherName": "Greif Matthias"
     },
     "nsis": {
       "perMachine": true,
@@ -91,7 +91,8 @@
     }
   },
   "keywords": [
-    "{{SomeKeyWords}}",
+    "testing",
+    "development",
     "electron",
     "electron-app"
   ],
