@@ -8,7 +8,7 @@ The only thing that needs to be done to get this up and running is setting your 
 
 ## Setup project
 
-1. Setup the "package.json" file. Replace all content between "{{ }}" including "{{}}" with your own values:
+1. Setup the "package.json" file. Replace all content between "{{ }}" (brackets included) with your own values:
     * {{ApplicationName}} = Name of your application
     * {{ApplicationDescription}} = Some description for your application
     * {{AuthorName}} = Name of the publisher/maintainer/author/..
