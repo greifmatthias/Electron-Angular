@@ -11,9 +11,9 @@
     "ng": "ng",
     "debug": "electron .",
     "electron": "ng build --base-href ./ && electron .",
-    "electron-build": "ng build --prod && electron .",
+    "electron-build": "ng build --base-href ./ --prod && electron .",
     "pack": "electron-builder --dir",
-    "dist": "ng build --prod && electron-builder"
+    "dist": "ng build --base-href ./ --prod && electron-builder"
   },
   "build": {
     "directories": {
