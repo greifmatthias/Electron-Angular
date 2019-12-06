@@ -50,9 +50,9 @@
       "synopsis": "{{ApplicationName}}"
     },
     "dmg": {
-      "background": "build/appdmg.png",
-      "icon": "build/icon.icns",
-      "iconSize": 100,
+      "background": "build/background.png",
+      "icon": "build/icon.png",
+      "iconSize": 512,
       "contents": [
         {
           "x": 380,
